@@ -1,21 +1,23 @@
 html{
-  background: blueviolet;
+  background:blueviolet;
   font-family: Avenir, Helvetica,Arial,'system-ui', sans-serif;
   -webkit-font-smoothing:antialiased;
   -moz-osx-o-font-smoothing:grayscale;
+  color: #2c3e50;
   width: 100%;
   height: 100%;
   overflow:scroll;
 }
 header {
   height: 70px;
+  color: white;
   font-style: italic;
   font-size: 40px;
   text-align: left;
-  color: white;
+  padding: 20px;
 }
 main {
-  padding:50px 10px;
+  padding: 0 10px;
   width: calc(100%-40px);
   height: 100%;
 }
@@ -27,7 +29,7 @@ main {
   display: flex;
 }
 .addlist {
-  margin: 0 auto;
+  margin: 0 10px auto;
   display: inline-block;
   flex-direction: column;
   align-items: flex-start;
@@ -35,16 +37,18 @@ main {
   width: 320px;
 }
 .text-input {
-  padding: 10px 20px;
-  margin-top: 15px;
+  padding: 10px 15px;
   width: calc(100%-30px);
+  background: #ccc;
   border-radius: 8px;
-  border:2px solid black;
   cursor: pointer;
   border: none;
   font-family: 'Noto Sans japanese','Noto Sans','system-ui',sans-serif;
   font-weight: 700;
+  font-size: 24px;
+  color: #242424;
   cursor: pointer;
+  overflow: overlay;
 }
 .text-input:focus{
   outline: 0;
@@ -64,20 +68,20 @@ main {
 }
 .add-button:active{
   background: #00d78f;
-  margin: 10px;
-
 }
 .list{
-  margin:10px 10px auto;
+  margin:0 5px auto;
   position: relative;
   display: inline-block;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 290px;
   width: 290px;
-  background:cadetblue;
+  background: #e0e0e0;
   border-radius: 8px;
   padding: 10px;
+  border: solid #ddd 15px;
+  color: gray;
+  vertical-align: top;
 }
 .list-header {
   width: 290px;
@@ -89,7 +93,7 @@ main {
   padding: 15px;
 }
 .list-title{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   padding: 15px;
 }
@@ -108,7 +112,7 @@ main {
   margin-bottom: 10px;
   position: relative;
   display: flex;
-  padding: 10px;
+  padding: 30px 15px 40px;
   background: #fff;
   border-radius: 8px;
   width: 260px;
@@ -118,13 +122,14 @@ main {
   position: absolute;
   top: 6px;
   right: 15px;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   border-radius: 8px;
   border-color: red;
   border-style: solid;
   background-color: red;
   color: white;
+  margin: 5px;
 }
 .body {
   font-size: 18px;
